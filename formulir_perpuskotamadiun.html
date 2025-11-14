@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Anggota Perpustakaan Kota Madiun</title>
+</head>
+<body>
+    <h2>Formulir Anggota Perpustakaan Kota Madiun</h2>
+    <form action="proses_perpus.html" method="get">
+        Nama Lengkap: <input type="text" name="nama" /> <br /><br />
+
+        NIK: <input type="text" name="nik" /> <br /><br />
+
+        Jenis Kelamin:
+        <input type="radio" name="jk" value="Laki-laki" checked /> Laki-laki
+        <input type="radio" name="jk" value="Perempuan" /> Perempuan
+        <br /><br />
+
+        Alamat: <br />
+        <textarea name="alamat" rows="4" cols="30"></textarea> <br /><br />
+
+        Jenis Keanggotaan:
+        <select name="jenis">
+            <option value="pelajar">Pelajar</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="umum">Umum</option>
+        </select>
+        <br /><br />
+
+        Hobi Membaca:
+        <input type="checkbox" name="hobi" value="novel" /> Novel
+        <input type="checkbox" name="hobi" value="majalah" /> Majalah
+        <input type="checkbox" name="hobi" value="komik" /> Komik
+        <br /><br />
+
+        <input type="submit" value="Daftar Sekarang" />
+        <input type="reset" value="Hapus Data" />
+    </form>
+</body>
+</html>
