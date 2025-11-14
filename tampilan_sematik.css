@@ -1,0 +1,62 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav section section"
+        "footer footer footer";
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns: 20% 1fr 18%;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #707070;
+    grid-area: header;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+nav {
+    background: #C9BFBF;
+    grid-area: nav;
+    padding: 5px;
+}
+
+section {
+    background: #ABABAB;
+    grid-area: section;
+    padding: 10px;
+}
+
+footer {
+    background: #707070;
+    grid-area: footer;
+    font-size: small;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+/* Navigasi */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 8px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #444;
+}
