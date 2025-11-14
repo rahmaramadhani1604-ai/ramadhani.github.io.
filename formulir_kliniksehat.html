@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Pendaftaran Pasien Klinik Sehat</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Pasien Klinik Sehat</h2>
+    <form action="proses_klinik.html" method="post">
+        Nama Pasien: <input type="text" name="nama" /> <br /><br />
+
+        Usia: <input type="number" name="usia" /> tahun <br /><br />
+
+        Jenis Kelamin:
+        <input type="radio" name="jk" value="Laki-laki" /> Laki-laki
+        <input type="radio" name="jk" value="Perempuan" /> Perempuan
+        <br /><br />
+
+        Alamat: <br />
+        <textarea name="alamat" rows="4" cols="30"></textarea> <br /><br />
+
+        Jenis Pemeriksaan:
+        <select name="pemeriksaan">
+            <option value="umum">Pemeriksaan Umum</option>
+            <option value="gigi">Pemeriksaan Gigi</option>
+            <option value="mata">Pemeriksaan Mata</option>
+        </select>
+        <br /><br />
+
+        Keluhan: <br />
+        <textarea name="keluhan" rows="5" cols="30">Tuliskan keluhan Anda...</textarea>
+        <br /><br />
+
+        <input type="submit" value="Daftar Sekarang" />
+        <input type="reset" value="Hapus Data" />
+    </form>
+</body>
+</html>
